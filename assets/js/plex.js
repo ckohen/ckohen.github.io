@@ -520,7 +520,7 @@ var PLEX = {
 	run: function() {
 
 		if(!PLEX.data_loaded) {
-			$.get("plex-data/data.js", function(data){
+			$.get("media/data.js", function(data){
 				eval(data); // unpack
 				PLEX.load_data(raw_plex_data);
 				return PLEX.run();
